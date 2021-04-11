@@ -281,7 +281,7 @@ btn1 {
 	  justify-content: space-between;
   }
 
-  @media (max-width: 600px){
+  @media only screen and (max-width: 600px) {
     .but{
         display: table-row;
 		
@@ -292,6 +292,9 @@ btn1 {
 	.feature h1{
 		font-size:3.5em;
 
+	}
+	.lc{
+		margin-left: 4rem;
 	}
 }
   .lang1{

@@ -6,6 +6,7 @@
     padding: 0;
    
 }
+
 .brandname{
 	font-family: 'Pacifico', cursive;
 }
@@ -68,5 +69,8 @@ code{
     }
     .but1{
         display: none;
+    }
+    .lc{
+        margin-left: 4rem;
     }
 }
