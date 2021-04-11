@@ -68,168 +68,56 @@
     </nav1>
     <div class="container">
         <ol>
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-html"><code>&lt;!DOCTYPE html&gt;
-&lt;html lang="en"&gt;
-&lt;head&gt;
-    &lt;meta charset="UTF-8"&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    
-&lt;/body&gt;
-&lt;/html&gt; </code></pre>
+            <li><b>Prime Number Program in Java</b> 
+                <pre class="language-java"><code>
+public class PrimeExample{    
+    public static void main(String args[]){    
+        int i,m=0,flag=0;      
+        int n=3;//it is the number to be checked    
+        m=n/2;      
+        if(n==0||n==1){  
+        System.out.println(n+" is not prime number");      
+        }else{  
+        for(i=2;i<=m;i++){      
+        if(n%i==0){      
+        System.out.println(n+" is not prime number");      
+        flag=1;      
+        break;      
+        }      
+        }      
+        if(flag==0)  { System.out.println(n+" is prime number"); }  
+        }//end of else  
+    }    
+    }                                                       
+                </code></pre>
             </li> 
-            <li><b>OL Tag:</b> This is the basic ordered list
-                <pre class="language-js"><code>ol </code></pre>
-            </li> 
-            <li id="py"><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-python"><code># Program to display the Fibonacci sequence up to n-th term
-
-nterms = int(input("How many terms? "))
-
-# first two terms
-n1, n2 = 0, 1
-count = 0
-
-# check if the number of terms is valid
-if nterms <= 0:
-   print("Please enter a positive integer")
-elif nterms == 1:
-   print("Fibonacci sequence upto",nterms,":")
-   print(n1)
-else:
-   print("Fibonacci sequence:")
-   while count < nterms:
-       print(n1)
-       nth = n1 + n2
-       # update values
-       n1 = n2
-       n2 = nth
-       count += 1</code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>#include <stdio.h>
-                    #include <stdlib.h>
-
-struct node 
-{
-    int num;                        //Data of the node
-    struct node *nextptr;           //Address of the next node
-}*stnode;
-
-void createNodeList(int n); // function to create the list
-void displayList();         // function to display the list
-
-int main()
-{
-    int n;
-        printf("\n\n Linked List : To create and display Singly Linked List :\n");
-        printf("-------------------------------------------------------------\n");
+            <li><b>Fibonacci:</b> Fibonacciseries
+                                <pre class="language-java"><code>
+class FibonacciExample1{  
+    public static void main(String args[])  
+    {    
+        int n1=0,n2=1,n3,i,c=10;    
+        System.out.print(n1+" "+n2);//printing 0 and 1    
         
-    printf(" Input the number of nodes : ");
-    scanf("%d", &n);
-    createNodeList(n);
-    printf("\n Data entered in the list : \n");
-    displayList();
-    return 0;
-}
-void createNodeList(int n)
-{
-    struct node *fnNode, *tmp;
-    int num, i;
-    stnode = (struct node *)malloc(sizeof(struct node));
+        for(i=1;i<=c-1;i++)
+        //loop starts from 2 because 0 and 1 are already printed    
+        {    
+        n3=n1+n2;    
+        System.out.print(" "+n3);    
+        n1=n2;    
+        n2=n3;    
+        }    
+        
+    }} 
+                     
+                   
+                </code></pre>
+            </li> 
 
-    if(stnode == NULL) //check whether the fnnode is NULL and if so no memory allocation
-    {
-        printf(" Memory can not be allocated.");
-    }
-    else
-    {
-// reads data for the node through keyboard
-
-        printf(" Input data for node 1 : ");
-        scanf("%d", &num);
-        stnode->num = num;      
-        stnode->nextptr = NULL; // links the address field to NULL
-        tmp = stnode;
-// Creating n nodes and adding to linked list
-        for(i=2; i<=n; i++)
-        {
-            fnNode = (struct node *)malloc(sizeof(struct node));
-            if(fnNode == NULL)
-            {
-                printf(" Memory can not be allocated.");
-                break;
-            }
-            else
-            {
-                printf(" Input data for node %d : ", i);
-                scanf(" %d", &num);
-    
-                fnNode->num = num;      // links the num field of fnNode with num
-                fnNode->nextptr = NULL; // links the address field of fnNode with NULL
-    
-                tmp->nextptr = fnNode; // links previous node i.e. tmp to the fnNode
-                tmp = tmp->nextptr; 
-            }
-        }
-    }
-}
-void displayList()
-{
-    struct node *tmp;
-    if(stnode == NULL)
-    {
-        printf(" List is empty.");
-    }
-    else
-    {
-        tmp = stnode;
-        while(tmp != NULL)
-        {
-            printf(" Data = %d\n", tmp->num);       // prints the data of current node
-            tmp = tmp->nextptr;                     // advances the position of current node
-        }
-    }
-} 
-                     </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>
-</code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code> </code></pre>
-            </li> 
-            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-js"><code>var i = 45; </code></pre>
-            </li> 
+            <!-- <li id="py"><b>HTML Boilerplate:</b> This is the basic html boilerplate code
+                <pre class="language-python"><code></code></pre>
+            </li>  -->
+            
         </ol>
     </div>
 </body>
