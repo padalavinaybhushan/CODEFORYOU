@@ -320,3 +320,11 @@ footer.copyright{
     text-align: center;
     padding:10px;
 }
+
+@media only screen and (max-width: 1200px){
+	.lc{
+		/* background-color: red; */
+		/* margin-left:2.25rem; */
+		padding-left: 6.5rem;
+	}
+}
