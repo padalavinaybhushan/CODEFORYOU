@@ -63,4 +63,7 @@ code{
     .but{
         display: table-row;
     }
+    .but1{
+        display: none;
+    }
 }
