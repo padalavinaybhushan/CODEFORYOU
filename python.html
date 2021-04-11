@@ -16,7 +16,7 @@
         <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <title>java codesheet </title>
+    <title>Python CodeSheet</title>
 </head>
 
 <body>
@@ -40,11 +40,11 @@
         </header>
         <div class="row feature">
           <div class="large-5 column">
-            <h1>CODE FOR <span class="lang">JAVA</span>.</h1>
+            <h1>CODE FOR <span class="lang">PYTHON</span>.</h1>
           </div>
           <div class="large-7 but1 column">
               <div class="but">
-                <li><a href="#Fibonacci"><btn1>Fibonacci</btn1></a></li>
+                <li><a href="#fbn"><btn1>prime</btn1></a></li>
                 <li><a href="#prime"><btn1>prime</btn1></a></li>
                 <!-- <li><a href="#py"><btn1>pythonbbkhlm</btn1></a></li>
                 <li><a href="#py"><btn1>pythonbb</btn1></a></li> -->
@@ -61,61 +61,81 @@
         </div>
       </div>
       <!-- &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&7 -->
-      <nav1>         <span class="logo"><img src="images/java.png" alt=""></span>
+      <nav1>         <span class="logo"><img src="images/python.png" alt=""></span>
         <div class="content center">
-            <span class="lang">JAVA</span> CodeSheet !
+            <span class="lang">PYTHON</span> CodeSheet !
         </div>
     </nav1>
     <div class="container">
         <ol>
-            <li id="prime"><b>Prime Number Program in Java</b> 
-                <pre class="language-java"><code>
-public class PrimeExample{    
-    public static void main(String args[]){    
-        int i,m=0,flag=0;      
-        int n=3;//it is the number to be checked    
-        m=n/2;      
-        if(n==0||n==1){  
-        System.out.println(n+" is not prime number");      
-        }else{  
-        for(i=2;i<=m;i++){      
-        if(n%i==0){      
-        System.out.println(n+" is not prime number");      
-        flag=1;      
-        break;      
-        }      
-        }      
-        if(flag==0)  { System.out.println(n+" is prime number"); }  
-        }//end of else  
-    }    
-    }                                                       
-                </code></pre>
-            </li> 
-            <li id="Fibonacci"><b>Fibonacci:</b> Fibonacciseries
-                                <pre class="language-java"><code>
-class FibonacciExample1{  
-    public static void main(String args[])  
-    {    
-        int n1=0,n2=1,n3,i,c=10;    
-        System.out.print(n1+" "+n2);//printing 0 and 1    
-        
-        for(i=1;i<=c-1;i++)
-        //loop starts from 2 because 0 and 1 are already printed    
-        {    
-        n3=n1+n2;    
-        System.out.print(" "+n3);    
-        n1=n2;    
-        n2=n3;    
-        }    
-        
-    }} 
-                     
-                   
-                </code></pre>
-            </li> 
+           
+            <li id="#fbn"><b>Fibonacci:</b> Program to display the Fibonacci sequence up to n-th term
+                <pre class="language-python"><code>
+# Program to display the Fibonacci sequence up to n-th term
 
-            <!-- <li id="py"><b>HTML Boilerplate:</b> This is the basic html boilerplate code
-                <pre class="language-python"><code></code></pre>
+nterms = int(input("How many terms? "))
+
+# first two terms
+n1, n2 = 0, 1
+count = 0
+
+# check if the number of terms is valid
+if nterms <= 0:
+    print("Please enter a positive integer")
+elif nterms == 1:
+    print("Fibonacci sequence upto",nterms,":")
+    print(n1)
+else:
+    print("Fibonacci sequence:")
+    while count < nterms:
+        print(n1)
+        nth = n1 + n2
+        # update values
+        n1 = n2
+        n2 = nth
+        count += 1</code></pre>
+            </li> 
+            
+            <li id="prime">
+                <b id="bp">PRIME Numbers</b> Program to check if a number is prime or not
+                <pre class="language-python"><code>
+# Program to check if a number is prime or not
+
+num = 29
+
+# To take input from the user
+#num = int(input("Enter a number: "))
+
+# define a flag variable
+flag = False
+
+# prime numbers are greater than 1
+if num > 1:
+    # check for factors
+    for i in range(2, num):
+        if (num % i) == 0:
+            # if factor is found, set flag to True
+            flag = True
+            # break out of loop
+            break
+
+# check if flag is True
+if flag:
+    print(num, "is not a prime number")
+else:
+    print(num, "is a prime number")
+                </code></pre>
+            </li> 
+            <!-- <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
+                <pre class="language-js"><code>
+                     </code></pre>
+            </li> 
+             -->
+            <!-- <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
+                <pre class="language-js"><code>var i = 45; </code></pre>
+            </li> 
+            <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
+                <pre class="language-js"><code>var i = 45; </code></pre>
             </li>  -->
             
         </ol>
