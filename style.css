@@ -81,3 +81,10 @@ code{
 #mainh{
     background-color: red;
 }
+
+footer.copyright{
+    background: #16384c;
+    color:#fff;
+    text-align: center;
+    padding:10px;
+}
