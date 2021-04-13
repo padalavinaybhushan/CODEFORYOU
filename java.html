@@ -68,6 +68,8 @@
     </nav1>
     <div class="container">
         <ol>
+
+          <h2>Prime Number:</h2>
             <li id="prime"><b>Prime Number Program in Java</b> 
                 <pre class="language-java"><code>
 public class PrimeExample{    
@@ -91,6 +93,8 @@ public class PrimeExample{
     }                                                       
                 </code></pre>
             </li> 
+
+            <h2>Fibonacci:</h2>
             <li id="Fibonacci"><b>Fibonacci:</b> Fibonacciseries
                                 <pre class="language-java"><code>
 class FibonacciExample1{  
@@ -114,6 +118,47 @@ class FibonacciExample1{
                 </code></pre>
             </li> 
 
+
+            <h2>Palindrome: </h2>
+             <li id="py">This is the Java programe to check given string is a palindrome or not
+                <pre class="language-java"><code>
+
+class PalindromeExample{  
+  public static void main(String args[]){  
+    int r,sum=0,temp;    
+    int n=454;//It is the number variable to be checked for palindrome  
+    
+    temp=n;    
+    while(n>0){    
+    r=n%10;  //getting remainder  
+    sum=(sum*10)+r;    
+    n=n/10;    
+    }    
+    if(temp==sum)    
+    System.out.println("palindrome number ");    
+    else    
+    System.out.println("not palindrome");    
+  }  
+  } 
+                </code></pre>
+            </li> 
+
+            <h2>Factorial: </h2>
+            <li id="py">This is the Java programe to find the factorial of a number
+               <pre class="language-java"><code>
+
+class FactorialExample{  
+  public static void main(String args[]){  
+    int i,fact=1;  
+    int number=5;//It is the number to calculate factorial    
+    for(i=1;i<=number;i++){    
+        fact=fact*i;    
+    }    
+    System.out.println("Factorial of "+number+" is: "+fact);    
+  }  
+  }   
+               </code></pre>
+           </li>
             <!-- <li id="py"><b>HTML Boilerplate:</b> This is the basic html boilerplate code
                 <pre class="language-python"><code></code></pre>
             </li>  -->

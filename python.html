@@ -68,8 +68,8 @@
     </nav1>
     <div class="container">
         <ol>
-           
-            <li id="fbn"><b>Fibonacci:</b> Program to display the Fibonacci sequence up to n-th term
+           <h2 >Fibonacci:</h2>
+            <li id="fbn"> Program to display the Fibonacci sequence up to n-th term
                 <pre class="language-python"><code>
 # Program to display the Fibonacci sequence up to n-th term
 
@@ -96,8 +96,9 @@ else:
         count += 1</code></pre>
             </li> 
             
+            <h2 id="bp">Prime Numbers</h2> 
             <li id="prime">
-                <b id="bp">PRIME Numbers</b> Program to check if a number is prime or not
+                Program to check if a number is prime or not
                 <pre class="language-python"><code>
 # Program to check if a number is prime or not
 
@@ -164,6 +165,52 @@ drop table tab_nam;
                      </code></pre>
             </li> 
             
+            <h2 >Palindrome:</h2>
+            <li> Python program to check if a string is palindrome or not
+                <pre class="language-python"><code>
+# function which return reverse of a string
+
+def isPalindrome(s):
+    return s == s[::-1]
+  
+  
+# Driver code
+s = "malayalam"
+ans = isPalindrome(s)
+  
+if ans:
+    print("Yes")
+else:
+    print("No")  
+                
+                </code></pre>
+            </li> 
+
+            <h2 >Factorial:</h2>
+            <li>  Python program to find factorial of a number
+                <pre class="language-python"><code>
+# Python code to demonstrate naive method
+# to compute factorial
+n = 23
+fact = 1
+  
+for i in range(1,n+1):
+    fact = fact * i
+      
+print ("The factorial of 23 is : ",end="")
+print (fact)
+#--------------------------------------------
+
+# Python code to demonstrate math.factorial()
+import math
+  
+print ("The factorial of 23 is : ", end="")
+print (math.factorial(23))  
+                
+                </code></pre>
+            </li> 
+
+
             <!-- <li><b>HTML Boilerplate:</b> This is the basic html boilerplate code
                 <pre class="language-js"><code>var i = 45; </code></pre>
             </li> 

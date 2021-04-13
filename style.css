@@ -78,7 +78,6 @@ code{
         min-width: 80vw;
     }
 }
-.bp{
-    font-weight: 4000;
-    font-size: large;
+#mainh{
+    background-color: red;
 }
