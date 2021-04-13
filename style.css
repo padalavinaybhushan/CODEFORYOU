@@ -73,6 +73,10 @@ code{
     .lc{
         margin-left: 4rem;
     }
+    .container{
+        margin: 0.25rem auto;
+        min-width: 80vw;
+    }
 }
 .bp{
     font-weight: 4000;
