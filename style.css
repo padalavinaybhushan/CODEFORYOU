@@ -76,6 +76,7 @@ code{
     .container{
         margin: 0.25rem auto;
         min-width: 95vw;
+        padding-left: 2.5rem;
     }
 }
 #mainh{
