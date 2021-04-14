@@ -88,3 +88,10 @@ footer.copyright{
     text-align: center;
     padding:10px;
 }
+
+.container1{
+    min-width: 450px;
+}
+nav1{
+    min-width: 450px;
+}
